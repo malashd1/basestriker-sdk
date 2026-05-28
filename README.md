@@ -42,8 +42,8 @@ for (const row of top) {
   console.log(`#${row.rank} ${row.player} — LV ${row.level} · ${row.score} pts`);
 }
 
-// Per-player stats
-const me = await client.getPlayer('0xe569A1f798D14809A076ea1c11cb13d698DFcE64');
+// Per-player stats (replace with any player wallet address)
+const me = await client.getPlayer('0xYourWalletAddressHere');
 console.log(`Lifetime POINTS: ${me.points}, highest LV: ${me.highestLevel}`);
 ```
 
@@ -68,6 +68,11 @@ All methods return strongly typed values; no `any`.
 ## Status
 
 🚧 **Work in progress.** Scaffold + readme; client implementation pending.
+
+## Studio
+
+BaseStriker SDK is a [Chisoft](https://chisoft.co/) project — an independent
+game studio based in Prague, Czech Republic. Issues + PRs welcome on this repo.
 
 ## License
 
